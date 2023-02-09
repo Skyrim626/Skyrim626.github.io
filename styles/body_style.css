@@ -1,0 +1,26 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #101010;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-25deg);
+    }
+
+    to {
+        opacity: 2;
+        transform: rotateX(0);
+    }
+
+}
+
+main {
+    animation: transitionIn 2s;
+}

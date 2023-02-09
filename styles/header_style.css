@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Anurati";
+    src: url("../fonts/Anurati-Regular.otf") format("opentype");
+  }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 200;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-decoration: none;
+    transition: 0.5;
+    font-family: "Anurati";
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style-type: none;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight:bolder;
+}
+
+header .navigation .slash {
+    color: #fff;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+header .navigation .dropdownHome {
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+header .navigation .dropdownGallery {
+    position: absolute;
+    left: 49%;
+}
