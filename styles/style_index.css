@@ -52,6 +52,11 @@ main .mainHead .shapeCurve {
     justify-content: center;
     border-top-right-radius: 20px;
     border: 2px solid black;
+    transition: 0.75s ease-in-out;
+}
+
+main .mainHead .shapeCurve:hover {
+    border: 2px solid #1F51FF;
 }
 
 main .mainHead h1 {
@@ -171,6 +176,7 @@ main .aboutMe {
     padding-top: 40px;
     background-color: #101010;
     padding-left: 0;
+    padding-bottom: 40px;
 }
 
 /* main .aboutMe h2 {
@@ -189,7 +195,7 @@ main .aboutMe h2 {
     color: white;
     letter-spacing: 5px;
     padding-left: 50px;
-    
+    transition: 0.30s ease-in-out;
 }
 
 main .aboutMe h2:hover {
@@ -233,7 +239,16 @@ main .aboutMe .paragraph p {
     font-size: 14px;
     text-align: justify;
     padding: 10px;
-} 
+}
+
+main .aboutMe .paragraph .aboutMeFont {
+    transition: 0.25s ease-in-out;
+}
+
+main .aboutMe .paragraph .aboutMeFont:hover {
+    color: #1F51FF;
+    font-weight: bolder;
+}
 
 main .aboutMe .aboutMeContainer .imageSelection .clip {
     /* position: absolute;
@@ -267,7 +282,7 @@ main .aboutMe .aboutMeContainer .imageSelection .clip {
 /* Clip Path */
 
 main .aboutMe .aboutMeContainer .imageSelection .clip.clip1 {
-    background: url("../img/me3.jpg");
+    background: url("../img/me1.jpg");
     background-size: cover;
     clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
     
@@ -282,7 +297,7 @@ main .aboutMe .aboutMeContainer .imageSelection .clip.clip2 {
 
 
 main .aboutMe .aboutMeContainer .imageSelection .clip.clip3 {
-	background: url("../img/me1.jpg");
+	background: url("../img/me3.jpg");
 	background-size: cover;
 	clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
 }
