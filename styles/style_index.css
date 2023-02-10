@@ -267,13 +267,16 @@ main .aboutMe .aboutMeContainer .imageSelection .clip {
     width: 500px;
     height: 390px; */
     position: absolute;
-	right: 3%;
-	width: 500px;
-	height: 390px;
+    right: 0;
+	width: 540px;
+	height: 100%;
 	transition: 0.5s;
 
     border-radius: 5px;
     border: 2px solid black;
+
+    top: 0;
+    bottom: 0;
 
 }
 
@@ -317,10 +320,93 @@ main .aboutMe .aboutMeContainer .imageSelection .clip.clip:hover {
 
 
 
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+
+/********************Relevant Projects*****************/
+
+main .projects {
+    background-color: #101010;
+    margin-top: 100px;
+    
+}
+
+main .projects .flexbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+main .projects .flexbox-container .flexbox-item {
+    width: 100%;
+}
+
+main .projects .flexbox-container section {
+    min-height: 250px;
+    margin: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 
 
+    /*Glassmorphism*/
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 
+}
 
+main .projects h2 {
+    font-family: "Anurati";
+    color: white;
+    letter-spacing: 5px;
+    transition: 0.30s ease-in-out;
+    position: relative;
+    left: -4%;
+    margin-bottom: 30px;
+    transition: 0.30s ease-in-out;
+}
+
+main .projects h2:hover {
+    color: #1F51FF;
+
+}
+
+main .projects h2:hover {
+    color: #1F51FF;
+
+}
+
+main .projects .flexbox-container .project1 {
+    background: url("../img/atmProjectImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    opacity: 50%;
+}
+
+main .projects .flexbox-container .project2 {
+    background: url("../img/tictactoeProjectImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    opacity: 50%;
+}
+
+main .projects .flexbox-container .project3 {
+    background: url("../img/randomWebsiteProject.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    opacity: 50%;
+}
 
 
 

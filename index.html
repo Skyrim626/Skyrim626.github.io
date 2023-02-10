@@ -34,7 +34,7 @@ Kung nandito ka sa tabi, mas masaya sana-->
         <nav>
             <ul class="navigation">
                 <li class="homeList">
-                    <a href="" class="homeLink">Home</a>
+                    <a href="#" class="homeLink">Home</a>
                     <!--Nested Menu Option-->
                     <ul class="dropdownHome">
                         <li>
@@ -156,7 +156,7 @@ Kung nandito ka sa tabi, mas masaya sana-->
         </article>
 
         <article class="aboutMe" id="aboutMe">
-            <h2>ABOUT ME</h2>
+            <h2>A<span class="aboutMeText"></span></h2>
             
             <section class="aboutMeContainer">
 
@@ -204,7 +204,14 @@ Kung nandito ka sa tabi, mas masaya sana-->
 
         </article>
 
-        <article>
+        <article class="projects" id="">
+            <h2>R<spam class="projectHeaderText"></spam></h2>
+
+            <section class="flexbox-container">
+                <section class="flexbox-item project1"></section>
+                <section class="flexbox-item project2"></section>
+                <section class="flexbox-item project3"></section>
+            </section>
 
         </article>
 
@@ -233,6 +240,21 @@ Kung nandito ka sa tabi, mas masaya sana-->
             strings: ["Student🧑‍🎓", "Developer💻"],
             typeSpeed: 50,
             backSpeed: 50,
+            loop: true
+        })
+
+        var aboutMeText = new Typed(".aboutMeText", {
+            strings: ["BOUT ME"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+
+    
+        var projectHeaderText = new Typed(".projectHeaderText", {
+            strings: ["ELEVEANT PROJECTS"],
+            typeSpeed: 150,
+            backSpeed: 150,
             loop: true
         })
 
