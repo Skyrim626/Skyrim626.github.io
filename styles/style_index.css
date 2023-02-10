@@ -1,10 +1,18 @@
+@font-face {
+    font-family: "Orbitron";
+    src: url("../fonts/Orbitron/Orbitron-VariableFont_wght.ttf") format("opentype");
+  }
 
+  @font-face {
+    font-family: "Anurati";
+    src: url("../fonts/Anurati-Regular.otf") format("opentype");
+  }
 
 article {
     padding: 100px;
 }
 
-.mainHead {
+main .mainHead {
     position: relative;
     width: 100%;
     min-width: 100vh;
@@ -13,4 +21,122 @@ article {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/header.jpg");
     background-size: cover;
     min-height: 100vh;
+    opacity: 90%;
+}
+
+
+
+main .mainHead .hero {
+    position: absolute;
+    bottom: 50%;
+    top: 23%;
+    left: 20%;    
+}
+
+main .mainHead .shapeCurve {
+    
+    text-align: center;
+    background-color: #101010;
+    width: 100px;
+    height: 30vh;
+    
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border: 2px solid black;
+}
+
+main .mainHead h1 {
+    position: relative;
+    bottom: -20px;
+    left: 50px;
+    width: 350px ;
+    text-align: left;
+    color: white;
+    font-family: "Anurati";
+    font-weight: normal;
+    font-size: 33px;
+    letter-spacing: 2px;
+    
+}
+
+main .mainHead h1 span {
+    transition: 0.20s ease-in-out;
+}
+
+main .mainHead h1 span:hover {
+    color: #1F51FF;
+}
+
+main .mainHead h1 strong {
+    letter-spacing: 3px;
+    transition: 0.15s ease-in-out;
+}
+
+main .mainHead h1 strong:hover {
+    color: #1F51FF;
+}
+
+
+
+
+
+
+
+
+main .mainHead .links{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+main .mainHead .links .pageBox {
+    position: relative;
+    width: 25%;
+    min-width: 50px;
+    min-height: 50px;
+    margin-right: 10px;
+
+    /*Glassmorphism*/
+    background: rgba( 255, 255, 255, 0 );
+    /* box-shadow: 0px 8px 32px 0 rgba( 31, 38, 135, 0.37 ),
+                0px 8px 32px 0 rgba( 31, 38, 135, 0.37 ),
+                0px 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+main .mainHead .links .pageBox h2 {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+main .mainHead .links .pageBox h2 a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.25s ease-in-out;
+}
+
+main .mainHead .links .pageBox h2 a:hover {
+    color:#1F51FF;
+    font-weight: bolder;
+    text-decoration-line: underline;
+}
+
+main .mainHead .links .pageBox p {
+    font-size: 12px;
+    text-align: justify;
+    padding: 20px;
+}
+
+main .mainHead .links .pageBox h2, p{
+    color: whitesmoke;
+    font-family: "Orbitron";
 }

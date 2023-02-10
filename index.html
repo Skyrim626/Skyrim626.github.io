@@ -2,6 +2,14 @@
 <html lang="en">
 
 <!--Hi Welcome TO My Cogggs achu achu achu achu achu-->
+<!--Eh, paano kung hindi
+Hindi ka nakilala?
+Siguro, nakakulong pa din
+Sa nakaraan, 'di makalaya
+Ang sarili, dinadaya
+Yeah, naglalasing-lasing, hindi pala kaya
+Yeah, ayokong magising nang 'di ka kasama
+Kung nandito ka sa tabi, mas masaya sana-->
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +23,7 @@
     <link rel="stylesheet" href="styles/body_style.css">
     <script src="https://kit.fontawesome.com/0753959a3d.js" crossorigin="anonymous"></script>
     <script src="scripts/controller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Zin's Portfolio</title>
 </head>
 <body>
@@ -111,6 +120,39 @@
     <main>
 
         <article class="mainHead">
+            <section class="hero">
+                <span class="shapeCurve">
+                    <h1>
+                        <span>G</span>
+                        <span>r</span>
+                        <span>e</span>
+                        <span>e</span>
+                        <span>t</span>
+                        <span>i</span>
+                        <span>n</span>
+                        <span>g</span>
+                        <span>s</span>
+                        <span>!</span>
+                        <br>
+                        I'm <strong>Hans Zin Sanchez</strong>
+                        <br>
+                        <!--Generate Auto Text Typing-->
+                        I am a <strong class="auto-type"></strong>
+                    </h1>
+                </span>
+                
+            </section>
+            <section class="links">
+                <section class="pageBox">
+                    <h2><a href="">Contact Me</a></h2>
+                    <p>No matter how you choose to contact me. I look forward to hearing from you and exploring the possibilites of working together</p>
+                </section>
+                <section class="pageBox">
+                    <h2><a href="">Visit Gallery</a></h2>
+                    <p>You're invited to visit my <strong>Gallery</strong>! I've created a <strong>Gallery</strong> to showcase some of my favorite pieces, random photos, videos, and the range of my abilities.</p>
+                </section>
+            </section>
+
 
         </article>
 
@@ -135,20 +177,28 @@
     <div class="cursor"></div>
     <div class="cursor2"></div>
 
-    <!-- <script>
+    <script>
         var cursor = document.querySelector(".cursor");
         var cursor2 = document.querySelector(".cursor2");
         document.addEventListener("mousemove", function(e) {
             cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
         });
 
+        /* Auto Typing Text Style */
+        var typed = new Typed(".auto-type", {
+            strings: ["Student🧑‍🎓", "Developer💻"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+
         /*Navigation Bar Scroll Event */
-        window.addEventListener('scroll', function(){
+        /*window.addEventListener('scroll', function(){
 			const header = document.querySelector('header');
 			header.classList.toggle("sticky", window.scrollY > 0);
-		})
+		}) */
 
-    </script> -->
+    </script>
 
 </body>
 </html>

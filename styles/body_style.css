@@ -23,6 +23,7 @@
 
 main {
     animation: transitionIn 2s;
+    background-color: #101010;
 }
 
 .cursor {
