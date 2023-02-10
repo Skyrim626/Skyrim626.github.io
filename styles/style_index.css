@@ -1,5 +1,16 @@
 
 
-body {
-    background-color: whitesmoke;
+article {
+    padding: 100px;
+}
+
+.mainHead {
+    position: relative;
+    width: 100%;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/header.jpg");
+    background-size: cover;
+    min-height: 100vh;
 }

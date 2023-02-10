@@ -3,6 +3,36 @@
     src: url("../fonts/Anurati-Regular.otf") format("opentype");
   }
 
+  @font-face {
+    font-family: "Orbitron";
+    src: url("../fonts/Orbitron/Orbitron-VariableFont_wght.ttf") format("opentype");
+  }
+
+  @keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-25deg);
+    }
+
+    to {
+        opacity: 2;
+        transform: rotateX(0);
+    }
+
+}
+
+/* Show/Hide Cursor */
+
+* {
+    cursor: none;
+}
+
+*:hover header, .logo, .navigation, li, a, .dropdownHome, .dropdownGallery, .menubar, i, .sideBarMenu {
+    cursor:alias;
+}
+
+/******************/
+
 header {
     position: fixed;
     top: 0;
@@ -14,7 +44,14 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    overflow: hidden;
+    background-color: none;
+}
+
+/*Add Scroll Up/Down Event */
+header.sticky {
+    padding: 10px 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.010);
+	background: #101010;
 }
 
 header .logo {
@@ -25,6 +62,11 @@ header .logo {
     text-decoration: none;
     transition: 0.5;
     font-family: "Anurati";
+    transition: 0.35s ease-in-out;
+}
+
+header .logo:hover {
+    color: #1F51FF;
 }
 
 header .navigation {
@@ -34,9 +76,10 @@ header .navigation {
 
 header .navigation li {
     list-style-type: none;
-    margin-left: 30px;
+    margin-right: 60px;
     font-size: 30px;
     font-weight:bolder;
+    
 }
 
 header .navigation .slash {
@@ -46,19 +89,133 @@ header .navigation .slash {
 header .navigation li a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    font-weight:400;
     transition: 0.5s;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 3px;
+    font-family: "Orbitron";
+    transition: 0.30s ease-in-out;
 }
+
+header .navigation li a:hover {
+    font-weight: bolder;
+    color: #1F51FF;
+}
+
+
 
 header .navigation .dropdownHome {
     position: absolute;
     left: 0;
-    top: 100%;
+    background-color: #101010;
+    padding: .55em;
+    border-radius: .25rem;
+    border-color: 10px solid black;
+    box-shadow: 5px 2px 5px 5px rgba(0, 0, 0, .3);
+    display: none;
 }
 
 header .navigation .dropdownGallery {
     position: absolute;
-    left: 49%;
+    left: 51%;
+    background-color: #101010;
+    padding: .55em;
+    border-radius: .25rem;
+    border-color: 10px solid black;
+    box-shadow: 5px 2px 5px 5px rgba(0, 0, 0, .3);
+    display: none;
 }
+
+
+header .navigation .homeList:hover .dropdownHome {
+    animation: transitionIn 0.75s ease-out;
+    display:block;
+}
+
+header .navigation .galleryList:hover .dropdownGallery {
+    animation: transitionIn 0.75s;
+    display:block;
+}
+
+/* Icon */
+header .menubar:hover {
+    color: #1F51FF;
+}
+
+/* <a> </a>
+/* header .menubar{
+    color: white;
+    font-size: 40px;
+    transition: 0.75s ease-in-out;
+} */
+
+header .menubar {
+    color: white;
+    list-style-type: none;
+    font-size: 40px;
+    transition: 0.30s ease-in-out;
+    right: 0;
+    left: 0;
+}
+
+header .sideBarMenu {
+    list-style: none;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    width: 15vh;
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+
+
+    /*Glassmorphism*/
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 #101010;
+    backdrop-filter: blur( 16.5px );
+    -webkit-backdrop-filter: blur( 16.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/*Display Side Bar Menu */
+header .menubar:hover .sideBarMenu {
+    animation: transitionIn 0.75s;
+    display: flex;
+}
+
+header .sideBarMenu li {
+    background-color: none;  
+    display: inline-block;
+    padding: 30px;
+}
+
+header .sideBarMenu li .sideBarIcon {
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    transition: 0.20s ease-in-out;
+}
+
+header .sideBarMenu li .sideBarIcon:hover {
+    opacity: 100;
+}
+
+/* Add styles in each icon during mouse over and mouse in */
+/* #hoverFacebook[title]:hover:after {
+    background-color: lightgray;
+    border-radius: 5px;
+    color: white;
+    content: attr(title);
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  } */
+
+
+/******/

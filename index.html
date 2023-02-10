@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Hi Welcome TO My Cogggs achu achu achu achu achu-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Hans Zin">
@@ -11,6 +14,7 @@
     <link rel="stylesheet" href="styles/header_style.css">
     <link rel="stylesheet" href="styles/body_style.css">
     <script src="https://kit.fontawesome.com/0753959a3d.js" crossorigin="anonymous"></script>
+    <script src="scripts/controller.js"></script>
     <title>Zin's Portfolio</title>
 </head>
 <body>
@@ -20,21 +24,21 @@
         </p>
         <nav>
             <ul class="navigation">
-                <li>
-                    <a href="">Home</a>
+                <li class="homeList">
+                    <a href="" class="homeLink">Home</a>
                     <!--Nested Menu Option-->
                     <ul class="dropdownHome">
                         <li>
-                            <a href="">About Me</a>
+                            <a href="" class="dropDownLink">About Me</a>
                         </li>
                         <li>
-                            <a href="">Skills</a>
+                            <a href="" class="dropDownLink">Skills</a>
                         </li>
                         <li>
-                            <a href="">Relevant Projects</a>
+                            <a href="" class="dropDownLink">Relevant Projects</a>
                         </li>
                         <li>
-                            <a href="">Education</a>
+                            <a href="" class="dropDownLink">Education</a>
                         </li>
                     </ul>
                 </li>
@@ -43,15 +47,15 @@
                     <a href="">Work</a>
                 </li>
                 <li class="slash">/</li>
-                <li>
+                <li class="galleryList">
                     <a href="">Gallery</a>
                     <!--Nested Menu Option-->
                     <ul class="dropdownGallery">
                         <li>
-                            <a href="">My Shots</a>
+                            <a href="" class="dropDownLink">My Shots</a>
                         </li>
                         <li>
-                            <a href="">Random Shots<i class="fa-solid fa-bars"></i></a>
+                            <a href="" class="dropDownLink">Random Shots</a>
                         </li>
                     </ul>
                 </li>
@@ -59,52 +63,66 @@
                 <li>
                     <a href="">Contact</a>
                 </li>
-                <ul class="sidebar">
+            </ul>
+        </nav>
+        <ul>
+            <li class="menubar">
+                <i class="fa-solid fa-ellipsis"></i>
+                <ul class="sideBarMenu">
                     <li>
-                        <a href="" class="menubar"><i class="fa-solid fa-bars"></i></a>
+                        <a href="" class="sideBarIcon" id="hoverFacebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="sideBarIcon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="sideBarIcon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </li>
                 </ul>
             </ul>
-        </nav>
+            </li>
+            <!-- <ul class="sideBarMenu">
+                <li>
+                    <a href="" class="sideBarIcon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sideBarIcon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sideBarIcon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </ul> -->
+        <!-- <a href="" class="menubar"></a> -->
     </header>
 
     <main>
 
-        <article class="greetings">
-
-            <section class="myName">
-                <h1>GREETINGS</h1>
-                <p>I'm <strong>Hans Zin<br>Sanchez</strong></p>
-                <p>I am a <strong>Developer</strong>💻</p>
-            </section>
-
-            <section class="headerContainers">
-
-                <section class="contactMeContainer">
-
-                </section>
-
-                <section class="galleryContainer">
-
-                </section>
-
-            </section>
+        <article class="mainHead">
 
         </article>
 
-        <article class="aboutMe">
+        <article>
             
         </article>
 
-        <article class="skills">
+        <article>
 
         </article>
 
-        <article class="relevantProjects">
-
-        </article>
-
-        <article class="education">
+        <article>
 
         </article>
 
@@ -113,6 +131,24 @@
     <footer>
 
     </footer>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove", function(e) {
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+
+        /*Navigation Bar Scroll Event */
+        window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+
+    </script> -->
 
 </body>
 </html>
