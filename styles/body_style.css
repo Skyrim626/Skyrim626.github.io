@@ -21,9 +21,12 @@
 
 }
 
+body {
+    background-color: #101010;
+}
+
 main {
     animation: transitionIn 2s;
-    background-color: #101010;
 }
 
 .cursor {
@@ -51,3 +54,21 @@ main {
     transform: translate(-50%, -50%);
     opacity: 0.5;
 }
+
+
+/** Scroll Bar Customizer */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #004e92);
+    border-radius: 6px;
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #1F51FF);
+}
+

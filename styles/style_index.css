@@ -12,6 +12,13 @@ article {
     padding: 100px;
 }
 
+/* Background Image*/
+main {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/wallpaperMain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 main .mainHead {
     position: relative;
     width: 100%;
@@ -67,6 +74,7 @@ main .mainHead h1 span {
 
 main .mainHead h1 span:hover {
     color: #1F51FF;
+    font-size: 40px;
 }
 
 main .mainHead h1 strong {
@@ -140,3 +148,164 @@ main .mainHead .links .pageBox h2, p{
     color: whitesmoke;
     font-family: "Orbitron";
 }
+
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+
+/*********************/
+/* About Me Section */
+
+
+main .aboutMe {
+    position: relative;
+    margin-top: 100px;
+    padding-top: 40px;
+    background-color: #101010;
+    padding-left: 0;
+}
+
+/* main .aboutMe h2 {
+    font-family: "Anurati";
+    color: white;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 0;
+    padding-left: 50px;
+    opacity: 80%;
+    transition: 0.25s ease-in-out
+} */
+
+main .aboutMe h2 {
+    font-family: "Anurati";
+    color: white;
+    letter-spacing: 5px;
+    padding-left: 50px;
+    
+}
+
+main .aboutMe h2:hover {
+    color: #1F51FF;
+
+}
+
+main .aboutMe .aboutMeContainer {
+    /* position: relative; */
+    padding-left: 50px;
+    padding-top: 20px;
+    /* padding-right: 50px; */
+    display: flex;
+    width: 100%;
+}
+
+/* main .aboutMe .aboutMeContainer {
+    background-color: red;
+    width: 100%;
+    position: relative;
+    left: -50px;
+    bottom: -50px;
+    max-height: 557px;
+    display: flex;
+} */
+
+
+
+/* main .aboutMe .paragraph {
+    position: relative;
+    left: -50px;
+    top: 20%;
+    
+}*/
+
+main .aboutMe .paragraph {
+    position: relative;
+}
+
+main .aboutMe .paragraph p {
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px;
+} 
+
+main .aboutMe .aboutMeContainer .imageSelection .clip {
+    /* position: absolute;
+    padding-left: 20px;
+    right: 3%;
+    width: 500px;
+    height: 390px;
+    background-color: #1F51FF; 
+    top: 0;
+    left: 0;
+    width: 100%; */
+    
+    /* margin-left: 30px;
+    position: relative;
+    background-color: aliceblue;
+    width: 500px;
+    height: 390px; */
+    position: absolute;
+	right: 3%;
+	width: 500px;
+	height: 390px;
+	transition: 0.5s;
+
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+
+
+
+/* Clip Path */
+
+main .aboutMe .aboutMeContainer .imageSelection .clip.clip1 {
+    background: url("../img/me3.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+    
+}
+
+main .aboutMe .aboutMeContainer .imageSelection .clip.clip2 {
+    background: url("../img/me2.jpg");
+    background-size: cover;
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+    
+}
+
+
+main .aboutMe .aboutMeContainer .imageSelection .clip.clip3 {
+	background: url("../img/me1.jpg");
+	background-size: cover;
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+
+
+main .aboutMe .aboutMeContainer .imageSelection .clip:hover {
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+main .aboutMe .aboutMeContainer .imageSelection .clip.clip:hover {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
