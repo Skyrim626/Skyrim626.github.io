@@ -13,10 +13,23 @@ article {
 }
 
 /* Background Image*/
-/* main {
+
+/* body {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/wallpaperMain.jpg");
     background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+} */
+
+/* main {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/wallpaperMain.jpg");
+    background-size: contain;
     background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
 } */
 
 main .mainHead {
@@ -520,8 +533,23 @@ main .projects .flexbox-container .flexbox-item .image_overlayContainer .box img
 main .education {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/wallpaperMain.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
 }
 
+/* main .education .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+ */
  main .education h2 {
     font-family: "Anurati";
     color: white;
@@ -551,6 +579,7 @@ main .education .imageContainer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 80px;
+    position: relative;
 }
 
 main .education .imageContainer .box .grid-item {
@@ -606,4 +635,219 @@ main .education .imageContainer .box .grid-item .card-text h3 {
 
 main .education .imageContainer .box:hover .card-text {
     top: 80px;
+}
+
+
+
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/** Contact Me Section **/
+
+main .contactMe {
+    
+    /* margin-top: 70px; */
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    background-size: cover;
+}
+
+main .contactMe .contactVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   /*  min-width: 100%;
+    min-height: 100%; */
+    height: 100%;
+}
+
+main .contactMe h2 {
+    font-family: "Anurati";
+    color: white;
+    letter-spacing: 5px;
+    transition: 0.30s ease-in-out;
+    position: relative;
+    left: -4%;
+    margin-bottom: 30px;
+    transition: 0.30s ease-in-out;
+}
+
+main .contactMe h2:hover {
+    color: #1F51FF;
+
+}
+
+main .contactMe h2:hover {
+    color: #1F51FF;
+
+}
+
+main .contactMe .contactForm {
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 2px solid #101010;
+    padding: 30px;
+    /* width: 80%; */
+
+    transition: .50s ease-in-out;
+
+}
+
+main .contactMe .contactForm:hover {
+    border: 2px solid black;
+}
+
+main .contactMe .contactForm {
+   display: flex;
+   justify-content: space-between;
+}
+
+main .contactMe .contactForm .section {
+    margin: 10px;
+}
+
+/** Left Section **/
+
+main .contactMe .contactForm .section p {
+    font-size: 16px;
+    text-align: justify;
+    transition: 0.50s ease-in-out;
+}
+
+main .contactMe .contactForm .section p:hover {
+    color: #1F51FF;
+    font-weight: 800;
+}
+
+main .contactMe .contactForm .section .form {
+    margin-top: 20px;
+}
+
+main .contactMe .contactForm .section .form .input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+main .contactMe .contactForm .section .form .input p label {
+    font-size: 15px;
+}
+
+main .contactMe .contactForm .section .form .input p input {
+    margin-top: 7px;
+    height: 50px;
+    width: 400px;
+    padding: 10px 20px;
+    font-family: "Orbitron";
+    opacity: 80%;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+    color: white;
+    background-color: #101010;
+
+    transition: 0.25s ease-in-out;
+}
+
+main .contactMe .contactForm .section .form .input p input:hover {
+    border: 2px solid #1F51FF;
+}
+
+
+main .contactMe .contactForm .section .form .message {
+    color: white;
+    font-family: "Orbitron";
+}
+
+main .contactMe .contactForm .section .form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    background: #101010;
+    opacity: 90%;
+    color: white;
+    font-family: "Orbitron";
+    border: 2px solid whitesmoke;
+
+    resize: none;
+
+    transition: 0.25s ease-in-out;
+}
+
+main .contactMe .contactForm .section .form textarea:hover {
+    border: 2px solid #1F51FF;
+}
+
+main .contactMe .contactForm .section .form button {
+    padding: 10px 20px;
+    font-family: "Orbitron";
+    text-align: right;
+    font-size: 13px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 5px;
+    background: #101010;
+    letter-spacing: 5px;
+    
+    transition: .25s ease-in-out; 
+}
+
+main .contactMe .contactForm .section .form button:hover {
+    background-color: #1F51FF;
+}
+
+
+/** Right Section **/
+
+main .contactMe .contactForm .section.rightSection {
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    opacity: 80%;
+    font-family: "Orbitron";
+    color: whitesmoke;
+
+    border-left: 2px solid rgb(197, 197, 197);
+    opacity: 100%;
+    
+    
+}
+
+main .contactMe .contactForm .section.rightSection section {
+    margin-bottom: 30px;
+
+}
+
+main .contactMe .contactForm .section.rightSection h3 {
+    font-size: 15px;
+    color: #1F51FF;
+}
+
+main .contactMe .contactForm .section.rightSection p, address, a {
+    margin-top: 10px;
+    color: whitesmoke;
+    font-weight: normal;
+    transition: 0.25s;
+}
+
+main .contactMe .contactForm .section.rightSection a:hover {
+    color: #1F51FF;
+}
+
+main .contactMe .contactForm .section.rightSection address:hover {
+    color: #1F51FF;
 }

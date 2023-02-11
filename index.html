@@ -84,7 +84,7 @@ Kung nandito ka sa tabi, mas masaya sana-->
                 </li>
                 <li class="slash">/</li>
                 <li>
-                    <a href="https://www.youtube.com/watch?v=a3Z7zEc7AXQ" target="_blank">Contact</a>
+                    <a href="#contact" onclick="navigationLinkClicked(this)">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -169,6 +169,7 @@ Kung nandito ka sa tabi, mas masaya sana-->
 
         </article>
 
+        
         <article class="aboutMe" id="aboutMe">
             <h2>A<span class="aboutMeText"></span></h2>
             
@@ -358,6 +359,64 @@ Kung nandito ka sa tabi, mas masaya sana-->
 
         </article>
 
+        <article class="contactMe" id="contact">
+            
+            <video src="video/contactVideo.mp4" autoplay loop class="contactVideo" muted></video>
+            
+            <h2>C<span class="contactText"></span></h2>
+
+            <section class="contactForm">
+
+                <section class="section leftSection">
+                    <p>Welcome to my contact page! I'm always open to connecting with potential clients, collaborators, and industry professionals. If you have any questions, comments, or just want to say hello, please don't hesitate to reach out.<br><br>Fill out the form below, or use my contact information to get in touch. I look forward to hearing from you!</p>
+                    
+                   <form action="" method="get" class="form">
+                        <section class="input">
+                            <p>
+                                <label for="name"><strong>Name</strong></label>
+                                <br>
+                                <input type="text" name="name" id="name" placeholder="Enter your name" autocomplete="on">
+                                
+                            </p>
+                            <p>
+                                <label for="email"><strong>Email</strong></label>
+                                <br>
+                                <input type="text" name="email" id="email" placeholder="Enter your email" autocomplete="on">
+                            </p>
+                         </section>
+                        
+                        <label for="message" class="message"><strong>Message</strong></label>
+                        <br>
+                        <textarea name="message" id="message" cols="40" rows="15" placeholder="Enter your message"></textarea>
+                        <button>SEND</button>
+
+                   </form>
+
+                </section>
+
+                <section class="section rightSection">
+                    <section>
+                    <h3>EMAIL</h3>
+                    <p><a href="">dummyInfo@gmail.com</a></p>
+                    <br>
+                    </section>
+
+                    <section>
+                    <h3>TELEPHONE</h3>
+                    <p><a href="">+63-978-168-820</a></p>
+                    <br>
+                    </section>
+
+                    <section>
+                    <h3>ADDRESS</h3>
+                    <address>Lapaz II Lapasan Cagayan de Oro City</address>
+                    </section>
+                </section>
+
+            </section>
+
+        </article>
+
     </main>
 
     <footer>
@@ -402,6 +461,13 @@ Kung nandito ka sa tabi, mas masaya sana-->
 
         var schoolText = new Typed(".schoolText", {
             strings: ["DUCATION"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+
+        var contactText = new Typed(".contactText", {
+            strings: ["ONTACT ME"],
             typeSpeed: 150,
             backSpeed: 150,
             loop: true
