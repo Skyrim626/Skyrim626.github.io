@@ -95,11 +95,19 @@ header .navigation li a {
     letter-spacing: 3px;
     font-family: "Orbitron";
     transition: 0.30s ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+    
 }
 
 header .navigation li a:hover {
     font-weight: bolder;
     color: #1F51FF;
+}
+
+/** When the navigation link is clicked **/
+.clicked {
+    background-color: black;
 }
 
 

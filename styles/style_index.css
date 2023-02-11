@@ -383,12 +383,12 @@ main .projects h2:hover {
 
 main .projects .flexbox-container .project1 {
     position: relative;
-    background: url("../img/atmProjectImage.jpg");
+    background: url("../img/atmProjectImage/atmProjectImage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    opacity: 70%;
+    /* opacity: 70%; */
 }
 
 main .projects .flexbox-container .project2 {
@@ -398,7 +398,7 @@ main .projects .flexbox-container .project2 {
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    opacity: 70%;
+    /* opacity: 70%; */
 }
 
 main .projects .flexbox-container .project3 {
@@ -406,46 +406,84 @@ main .projects .flexbox-container .project3 {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    opacity: 70%;
+    /* opacity: 70%; */
 }
 
 /****Overlay Effect****/
 
-main .projects .flexbox-container  h3 {
-    color: white;
+main .projects .flexbox-container .flexbox-item .image_overlayContainer {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    color: aliceblue;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    letter-spacing: 5px;
-    font-family: "Anurati";
-    color: white;
-    font-size: 40px;
+    top: 0;
+    left: 0;
     opacity: 0;
-    transition: opacity 0.25s;
-    /* z-index: inherit; */
-    background: rgba(0, 0, 0, 0.6);
-    
-    /*Border Radius*/
+    transition: 0.50s;
+    display: flex;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-
+    
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    
 }
 
-main .projects .flexbox-container h3:hover {
+main .projects .flexbox-container .flexbox-item .image_overlayContainer:hover {
     opacity: 1;
     
 }
 
-main .project1 .flexbox-container h3:hover {
-    opacity: 1;
-    color: pink;
+main .projects .flexbox-container .flexbox-item .image_overlayContainer .box {
+    height: 100%;
+}
+
+
+main .projects .flexbox-container .flexbox-item .image_overlayContainer .box.projectParagraph {
+    background-color: #101010;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .projects .flexbox-container .flexbox-item .image_overlayContainer .box.projectParagraph h3 {
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    font-family: "Anurati";
+}
+
+main .projects .flexbox-container .flexbox-item .image_overlayContainer .box.projectParagraph p {
+    padding: 20px;
+    text-align: center;
 }
 
 
 
+main .projects .flexbox-container .flexbox-item .image_overlayContainer .projectImage {
+    border-top-right-radius: 20px;
+    background-color: black;
+    width: 45%;
+}
+
+main .projects .flexbox-container .flexbox-item .image_overlayContainer .box img {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    /* border-top: 2px solid black;
+    border-right: 2px solid black; */
+    border-left: 2px solid #101010;
+
+    transition: 0.75s;
+    
+}
+
+/* main .projects .flexbox-container .flexbox-item .image_overlayContainer .box.projectImage #project1 {
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+ */

@@ -24,9 +24,10 @@ Kung nandito ka sa tabi, mas masaya sana-->
     <script src="https://kit.fontawesome.com/0753959a3d.js" crossorigin="anonymous"></script>
     <script src="scripts/controller.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="scripts/navigationController.js"></script>
     <title>Zin's Portfolio</title>
 </head>
-<body>
+<body> <!-- onload="changeProject1()" -->
     <header>
         <p>
             <a href="#" class="logo">ZIN</a>
@@ -34,17 +35,17 @@ Kung nandito ka sa tabi, mas masaya sana-->
         <nav>
             <ul class="navigation">
                 <li class="homeList">
-                    <a href="#" class="homeLink">Home</a>
+                    <a href="#" class="homeLink" onclick="navigationLinkClicked(this)">Home</a>
                     <!--Nested Menu Option-->
                     <ul class="dropdownHome">
                         <li>
-                            <a href="#aboutMe" class="dropDownLink">About Me</a>
+                            <a href="#aboutMe" class="dropDownLink" onclick="navigationLinkClicked(this)">About Me</a>
                         </li>
                         <li>
                             <a href="" class="dropDownLink">Skills</a>
                         </li>
                         <li>
-                            <a href="" class="dropDownLink">Relevant Projects</a>
+                            <a href="#projects" class="dropDownLink" onclick="navigationLinkClicked(this)">Relevant Projects</a>
                         </li>
                         <li>
                             <a href="" class="dropDownLink">Education</a>
@@ -204,28 +205,55 @@ Kung nandito ka sa tabi, mas masaya sana-->
 
         </article>
 
-        <article class="projects" id="">
+        <article class="projects" id="projects">
             <h2>R<spam class="projectHeaderText"></spam></h2>
 
             <section class="flexbox-container">
 
-                <!--This is where I add my projects-->
+                <!--ADDING PROJECTS HERE-->
                 <!----------------------------------->
                 <section class="flexbox-item project1">
-                    <h3 class="image-overlay">ATM BANK SYSTEM</h3>
-                    <!-- <section class="image_overlay">
-                        <h3>ATM BANK SYSTEM</h3>
-                    </section> -->
+                    <section class="image_overlayContainer">
+                        <section class="box projectParagraph">
+                            <h3>ATM BANK SYSTEM</h3>
+                            <p>The <strong>ATM</strong> powered by <strong>Tkinter</strong> is a GUI -based software that simulates a traditionally <strong>ATM</strong>, allowing users to desposit and withdraw money, check account balance, and transfer funds.</p>
+                        </section>
+
+                        <section class="box projectImage">
+                            <img id="project1Image" src="img/atmProjectImage/atmProjectImage.jpg" alt="ATM Project Image">
+                        </section>
+                    </section>
                 </section>
                 
 
                 <section class="flexbox-item project2">
-                    <h3 class="image-overlay">TIC TAC TOE</h3>
+                    <section class="image_overlayContainer">
+                        <section class="box projectParagraph">
+                            <h3>TIC TAC TOE</h3>
+                            <p><strong>TIC TAC TOE</strong> powered by <strong>JavaFX</strong> with 3x3, 4x4, and 5x5 options offers a visually appealing and user-friendly way to play classic single player and two-player game.</p>
+                        </section>
+
+                        <section class="box projectImage">
+                            <img src="img/tictactoeProjectImage.png" alt="ATM Project Image">
+                        </section>
+                    </section>
                 </section>
 
+
                 <section class="flexbox-item project3">
-                    <h3 class="image-overlay">RESPONSIVE WEBSITE</h3>
+                    <section class="image_overlayContainer">
+                        <section class="box projectParagraph">
+                            <h3>RESPONSIVE WEBSITE</h3>
+                            <p>A <strong>responsive website</strong> is a dynamic design that adjusts to any device. It's built with <strong>HTML</strong> for structure, <strong>CSS</strong> for styling, and <strong>JavaScript</strong> for interactivity. This combination ensures a seamless user experience on any screen size.</p>
+                        </section>
+
+                        <section class="box projectImage">
+                            <img src="img/randomWebsiteProject.jpg" alt="ATM Project Image">
+                        </section>
+                    </section>
                 </section>
+
+
             </section>
 
         </article>
@@ -278,6 +306,8 @@ Kung nandito ka sa tabi, mas masaya sana-->
 			const header = document.querySelector('header');
 			header.classList.toggle("sticky", window.scrollY > 0);
 		}) */
+
+        
 
     </script>
 
