@@ -28,6 +28,19 @@ Kung nandito ka sa tabi, mas masaya sana-->
     <title>Zin's Portfolio</title>
 </head>
 <body> <!-- onload="changeProject1()" -->
+
+    <!--Bubble Effect-->
+    <div class="bubbleBox">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
     <header>
         <p>
             <a href="#" class="logo">ZIN</a>
@@ -48,7 +61,7 @@ Kung nandito ka sa tabi, mas masaya sana-->
                             <a href="#projects" class="dropDownLink" onclick="navigationLinkClicked(this)">Relevant Projects</a>
                         </li>
                         <li>
-                            <a href="" class="dropDownLink">Education</a>
+                            <a href="#education" class="dropDownLink" onclick="navigationLinkClicked(this)">Education</a>
                         </li>
                     </ul>
                 </li>
@@ -206,7 +219,7 @@ Kung nandito ka sa tabi, mas masaya sana-->
         </article>
 
         <article class="projects" id="projects">
-            <h2>R<spam class="projectHeaderText"></spam></h2>
+            <h2>R<span class="projectHeaderText"></span></h2>
 
             <section class="flexbox-container">
 
@@ -220,7 +233,7 @@ Kung nandito ka sa tabi, mas masaya sana-->
                         </section>
 
                         <section class="box projectImage">
-                            <img id="project1Image" src="img/atmProjectImage/atmProjectImage.jpg" alt="ATM Project Image">
+                            <img id="project1Image" src="img/atmProjectImage/atmProjectImage.jpg" alt="ATM Project Image" loading="lazy">
                         </section>
                     </section>
                 </section>
@@ -234,7 +247,7 @@ Kung nandito ka sa tabi, mas masaya sana-->
                         </section>
 
                         <section class="box projectImage">
-                            <img src="img/tictactoeProjectImage.png" alt="ATM Project Image">
+                            <img src="img/tictactoeProjectImage.png" alt="ATM Project Image" loading="lazy">
                         </section>
                     </section>
                 </section>
@@ -248,7 +261,7 @@ Kung nandito ka sa tabi, mas masaya sana-->
                         </section>
 
                         <section class="box projectImage">
-                            <img src="img/randomWebsiteProject.jpg" alt="ATM Project Image">
+                            <img src="img/randomWebsiteProject.jpg" alt="ATM Project Image" loading="lazy">
                         </section>
                     </section>
                 </section>
@@ -258,7 +271,90 @@ Kung nandito ka sa tabi, mas masaya sana-->
 
         </article>
 
-        <article>
+        <article class="education" id="education">
+            <h2>E<span class="schoolText"></span></h2>
+
+            <section class="imageContainer">
+
+                <section class="box">
+                    <section class="grid-item">
+                        <img src="img/school/school_Logo0.jpg" alt="" loading="lazy" height="2048" width="2048">
+                        <section class="card-text">
+                            <h3>Cannossa Kindergarten<br>& Day Care Center</h3>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="box">
+                    <section class="grid-item">
+                        <img src="img/school/school_Logo1.jpg" alt="" loading="lazy" height="2048" width="2048">
+                        <section class="card-text">
+                            <h3>Sacred Heart of Jesus Montessori School</h3>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="box">
+                    <section class="grid-item">
+                        <img src="img/school/school_Logo2.jpg" alt="" loading="lazy" height="2048" width="2048">
+                        <section class="card-text">
+                            <h3>Southern Philippines College</h3>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="box">
+                    <section class="grid-item">
+                        <img src="img/school/school_Logo3.jpg" alt="" loading="lazy" height="2048" width="2048">
+                        <section class="card-text">
+                            <h3>MOGCHS</h3>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="box">
+                    <section class="grid-item">
+                        <img src="img/school/school_Logo4.jpg" alt="" loading="lazy" height="2048" width="2048">
+                        <section class="card-text">
+                            <h3>Informatics Computer Institute</h3>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="box">
+                    <section class="grid-item">
+                        <img src="img/school/school_Logo5.jpg" alt="" loading="lazy" height="2048" width="2048">
+                        <section class="card-text">
+                            <h3>USTP</h3>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- <div class="box box-1">Box1</div>
+                <div class="box box-2">Box2</div>
+                <div class="box box-3">Box3</div>
+                <div class="box box-4">Box4</div>
+                <div class="box box-5">Box5</div>
+                <div class="box box-6">Box6</div> -->
+            </section>
+
+            <!-- <section class="mainEducContainer">
+
+                <section class="educContainer educContainerSide">
+                    <img src="img/school/school_Logo1.jpg" alt="" class="topImage">
+                    <section class="gap"></section>
+                    <img src="img/school/school_Logo2.jpg" alt="" class="bottomImage">
+                </section>
+
+                <section class="educContainer educContainerMid">
+
+                </section>
+
+                <section class="educContainer educContainerSide">
+
+                </section>
+
+            </section> -->
 
         </article>
 
@@ -270,6 +366,9 @@ Kung nandito ka sa tabi, mas masaya sana-->
 
     <div class="cursor"></div>
     <div class="cursor2"></div>
+
+    
+
 
     <script>
         var cursor = document.querySelector(".cursor");
@@ -295,7 +394,14 @@ Kung nandito ka sa tabi, mas masaya sana-->
 
     
         var projectHeaderText = new Typed(".projectHeaderText", {
-            strings: ["ELEVEANT PROJECTS"],
+            strings: ["ELEVANT PROJECTS"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+
+        var schoolText = new Typed(".schoolText", {
+            strings: ["DUCATION"],
             typeSpeed: 150,
             backSpeed: 150,
             loop: true

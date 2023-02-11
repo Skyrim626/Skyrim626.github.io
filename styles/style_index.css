@@ -13,11 +13,11 @@ article {
 }
 
 /* Background Image*/
-main {
+/* main {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/wallpaperMain.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 main .mainHead {
     position: relative;
@@ -462,7 +462,17 @@ main .projects .flexbox-container .flexbox-item .image_overlayContainer .box.pro
     text-align: center;
 }
 
+main .projects .flexbox-container .flexbox-item .image_overlayContainer .box.projectParagraph h3, strong {
+    transition: 0.25s ease-in-out;
+}
 
+main .projects .flexbox-container .flexbox-item .image_overlayContainer .box.projectParagraph h3:hover {
+    color: #1F51FF;
+}
+
+main .projects .flexbox-container .flexbox-item .image_overlayContainer .box.projectParagraph strong:hover {
+    color: #1F51FF;
+}
 
 main .projects .flexbox-container .flexbox-item .image_overlayContainer .projectImage {
     border-top-right-radius: 20px;
@@ -487,3 +497,113 @@ main .projects .flexbox-container .flexbox-item .image_overlayContainer .box img
     opacity: 1;
 }
  */
+
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+/************************/
+ /** Education Section **/
+
+main .education {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/wallpaperMain.jpg");
+    background-size: cover;
+}
+
+ main .education h2 {
+    font-family: "Anurati";
+    color: white;
+    letter-spacing: 5px;
+    transition: 0.30s ease-in-out;
+    position: relative;
+    left: -4%;
+    margin-bottom: 30px;
+    transition: 0.30s ease-in-out;
+}
+
+main .education h2:hover {
+    color: #1F51FF;
+
+}
+
+main .education h2:hover {
+    color: #1F51FF;
+
+}
+
+/** Add Overlay Effects **/
+
+main .education .imageContainer {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 80px;
+}
+
+main .education .imageContainer .box .grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+main .education .imageContainer .box .grid-item:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 220%;
+    background: rgba(0, 0, 0, 0.7);
+    top: -50%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(25deg);
+    transform-origin: center top 0;
+    transition: 0.5s;
+    /* border-radius: 100%; */
+}
+
+main .education .imageContainer .box .grid-item:hover:before {
+    left: 20%;
+}
+
+
+main .education .imageContainer .box .grid-item img {
+    width: 100%;
+    /* height: auto; */
+    height: 50vh;
+    object-fit: cover;
+    /* border-radius: 100%; */
+    opacity: 85%;
+    border: 4px solid black;
+}
+
+main .education .imageContainer .box .grid-item .card-text {
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: -100%;
+    color: white;
+    left: 0;
+    z-index: 2;
+    transition: 1.1s;
+}
+
+main .education .imageContainer .box .grid-item .card-text h3 {
+    font-family: "Orbitron";
+
+}
+
+main .education .imageContainer .box:hover .card-text {
+    top: 80px;
+}

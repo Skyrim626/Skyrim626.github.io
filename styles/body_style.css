@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: #101010;
+    background-color: black;
 }
 
 main {
@@ -72,3 +72,59 @@ main {
     background: linear-gradient(transparent, #1F51FF);
 }
 
+/******************************/
+/******************************/
+/******************************/
+/******************************/
+/******************************/
+/******************************/
+/** Bubble Background Effect **/
+
+.bubbleBox ul li {
+    list-style-type: circle;
+    position: absolute;
+    width: 35px;
+    list-style: none;
+    height: 35px;
+    opacity: 0;
+    background: radial-gradient(whitesmoke, transparent, transparent);
+    bottom: 0;
+    left: 10vw;
+    animation: bubble 10s linear infinite;
+
+    cursor: none;
+}
+
+.bubbleBox ul li:nth-child(2) {
+    left: 37vw;
+    animation-delay: 2s;
+}
+
+.bubbleBox ul li:nth-child(3) {
+    left: 25vw;
+    animation-delay: 4s;
+}
+
+.bubbleBox ul li:nth-child(4) {
+    left: 60vw;
+    animation-delay: 6s;
+}
+
+.bubbleBox ul li:nth-child(5) {
+    left: 75vw;
+    animation-delay: 4s;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+        bottom: 0;
+    }
+
+    100% {
+        transform: scale(10);
+        opacity: 0;
+        bottom: 100vh;
+    }
+}
