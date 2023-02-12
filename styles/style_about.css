@@ -9,6 +9,237 @@
   }
 
 
+
+
+
+
+
+
+
+  header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: none;
+}
+
+/*Add Scroll Up/Down Event */
+header.sticky {
+    padding: 10px 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.010);
+	background: #101010;
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 200;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-decoration: none;
+    transition: 0.5;
+    font-family: "Anurati";
+    transition: 0.35s ease-in-out;
+}
+
+header .logo:hover {
+    color: #1F51FF;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style-type: none;
+    margin-right: 60px;
+    font-size: 30px;
+    font-weight:bolder;
+    
+}
+
+header .navigation .slash {
+    color: #fff;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight:400;
+    transition: 0.5s;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-family: "Orbitron";
+    transition: 0.30s ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+header .navigation li a:hover {
+    font-weight: bolder;
+    color: #1F51FF;
+}
+
+/** When the navigation link is clicked **/
+.clicked {
+    background-color: black;
+}
+
+
+
+header .navigation .dropdownHome {
+    position: absolute;
+    left: 0;
+    background-color: #101010;
+    padding: .55em;
+    border-radius: .25rem;
+    border-color: 10px solid black;
+    box-shadow: 5px 2px 5px 5px rgba(0, 0, 0, .3);
+    display: none;
+}
+
+header .navigation .dropdownGallery {
+    position: absolute;
+    left: 51%;
+    background-color: #101010;
+    padding: .55em;
+    border-radius: .25rem;
+    border-color: 10px solid black;
+    box-shadow: 5px 2px 5px 5px rgba(0, 0, 0, .3);
+    display: none;
+}
+
+
+header .navigation .homeList:hover .dropdownHome {
+    animation: transitionIn 0.75s ease-out;
+    display:block;
+}
+
+header .navigation .galleryList:hover .dropdownGallery {
+    animation: transitionIn 0.75s;
+    display:block;
+}
+
+/* Icon */
+header .menubar:hover {
+    color: #1F51FF;
+}
+
+/* <a> </a>
+/* header .menubar{
+    color: white;
+    font-size: 40px;
+    transition: 0.75s ease-in-out;
+} */
+
+header .menubar {
+    color: white;
+    list-style-type: none;
+    font-size: 40px;
+    transition: 0.30s ease-in-out;
+    right: 0;
+    left: 0;
+}
+
+header .sideBarMenu {
+    list-style: none;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    width: 15vh;
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+
+
+    /*Glassmorphism*/
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 #101010;
+    backdrop-filter: blur( 16.5px );
+    -webkit-backdrop-filter: blur( 16.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/*Display Side Bar Menu */
+header .menubar:hover .sideBarMenu {
+    animation: transitionIn 0.75s;
+    display: flex;
+}
+
+header .sideBarMenu li {
+    background-color: none;  
+    display: inline-block;
+    padding: 30px;
+}
+
+header .sideBarMenu li .sideBarIcon {
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    transition: 0.20s ease-in-out;
+}
+
+header .sideBarMenu li .sideBarIcon:hover {
+    opacity: 100;
+}
+
+/* Add styles in each icon during mouse over and mouse in */
+/* #hoverFacebook[title]:hover:after {
+    background-color: lightgray;
+    border-radius: 5px;
+    color: white;
+    content: attr(title);
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  } */
+
+
+/******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main {
     /* min-height: 100vh; */
     background: black;
@@ -25,6 +256,7 @@ main .container {
 main .container .bubbles {
     position: relative;
     display: flex;
+    
 }
 
 /* main .container .bubbles span {
@@ -51,7 +283,7 @@ main .container .bubbles span {
                 0 0 50px #1F51FF,
                 0 0 100px #1F51FF;
     animation: animate 15s linear infinite;
-    animation-duration: calc(250s / var(--i));
+    animation-duration: calc(80s / var(--i));
 }
 
 /* main .container .bubbles span:nth-child(even) {
@@ -67,10 +299,12 @@ main .container .bubbles span:nth-child(even) {
                 0 0 100px whitesmoke;
 }
 
+
+
 @keyframes animate {
 
     0% {
-        transform: translateY(100vh) scale(0);
+        transform: translateY(200vh) scale(0);
     }
 
     100% {
@@ -87,13 +321,13 @@ main .container article .rowContainer {
   justify-content: space-between;
   align-items: center;
   margin-top: 80px;
-  height: 100%;
+  /* height: 100%; */
 }
 
 main .container article .rowContainer .row {
   /* background-color: blue; */
   width: 30%;
-  height: 100vh;
+  /* height: 100%; */
   
   
   align-items: center;
@@ -186,6 +420,7 @@ main .container article .rowContainer .row .box .text-overlay:hover {
 
 main .container article .rowContainer .row.row1 {
     display: block;
+    
 }
 
 main .container article .rowContainer .row.row1 .box.box1 {
@@ -200,6 +435,13 @@ main .container article .rowContainer .row.row1 .box.box1 {
 
 }
 
+main .container article .rowContainer .row.row1 .box.box2 {
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    height: 380px;
+}
+
 
 
 
@@ -210,8 +452,18 @@ main .container article .rowContainer .row.row2 {
 }
 
 main .container article .rowContainer .row.row2 .box.box1 {
-    margin-top: 300px;
+    margin-top: 50px;
     
+}
+
+main .container article .rowContainer .row.row2 .box.box2 {
+    margin-top: 150px;
+    height: 400px;
+}
+
+main .container article .rowContainer .row.row2 .box.box3 {
+    margin-top: 80px;
+    height: 280px;
 }
 
 
@@ -223,6 +475,50 @@ main .container article .rowContainer .row.row3 {
 main .container article .rowContainer .row.row3 .box.box1 {
     margin-top: 5px;
     height: 280px;
+    position: relative;
+}
+
+main .container article .rowContainer .row.row3 .box.box2 {
+    height: 300px;
+    margin-top: 100px;
+}
+
+main .container article .rowContainer .row.row3 .box.box3 {
+    height: 360px;
+    margin-top: 100px;
+}
+
+
+/********************************/
+/********************************/
+/********************************/
+/********************************/
+/********************************/
+/******* POP UP EFFECT **********/
+
+/** Pop Up Row 1 Box 1 **/
+
+main .container article .popup {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    height: 100%;
+    
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+main .container article .open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 
@@ -299,3 +595,45 @@ main .container .box .popup button {
 
 
  */
+
+
+ /***** TESTING *****/
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /* overflow: auto; */ /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+    cursor: pointer;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: gray;
+    /* margin: 15% auto; */ /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 100%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+  }

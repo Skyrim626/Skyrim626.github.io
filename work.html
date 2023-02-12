@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/portfolio_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/header_style.css">
+    <!-- <link rel="stylesheet" href="styles/header_style.css"> -->
     <link rel="stylesheet" href="styles/body_style.css">
     <link rel="stylesheet" href="styles/style_about.css">
     <script src="https://kit.fontawesome.com/0753959a3d.js" crossorigin="anonymous"></script>
     <script src="scripts/controller.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="scripts/navigationController.js"></script>
+    <!-- <script src="scripts/navigationController.js"></script> -->
     <title>Zin's Portfolio</title>
 </head>
 <body>
@@ -158,6 +158,8 @@
 
             <article>
 
+                <!--Adding Project Occured-->
+
                 <section class="rowContainer">
                     
                     <section class="row row1">
@@ -167,8 +169,22 @@
                             <img src="img/orionProject/orionLogo.jpg" alt="ATM SYSTEM">
 
                             <section class="text-overlay">
-                                <button onclick="hello()">
+                                <button type="submit" onclick="openPopup()" id="myBtn">
                                     <h2>ORION Bank System</h2> 
+                                </button>
+
+                                
+                            </section>
+
+                        </section>
+
+                        <section class="box box2">
+                            
+                            <img src="img/gameLogo/corsairLogo.jpg" alt="Corsair">
+
+                            <section class="text-overlay">
+                                <button onclick="hello()">
+                                    <h2>Corsair</h2> 
                                 </button>
                             </section>
 
@@ -186,6 +202,24 @@
                             </section>
                         </section>
 
+                        <section class="box box2">
+                            <img src="img/gameLogo/skullNeonLogo.jpg" alt="STELLAR WEBSITE">
+                            <section class="text-overlay">
+                                <button onclick="hello()">
+                                    <h2>Skull Neon</h2> 
+                                </button>
+                            </section>
+                        </section>
+
+                        <section class="box box3">
+                            <img src="img/gameLogo/arkhamOriginLogo.jpg" alt="STELLAR WEBSITE">
+                            <section class="text-overlay">
+                                <button onclick="hello()">
+                                    <h2>Arkham Origins</h2> 
+                                </button>
+                            </section>
+                        </section>
+
 
                        
                     </section>
@@ -199,10 +233,44 @@
                                 </button>
                             </section>
                         </section>
+
+                        <section class="box box2">
+                            <img src="img/gameLogo/razerLogo.jpg" alt="">
+                            <section class="text-overlay">
+                                <button onclick="hello()">
+                                    <h2>RAZER</h2> 
+                                </button>
+                            </section>
+                        </section>
+                        
+                        <section class="box box3">
+                            <img src="img/gameLogo/theAlliance.jpg" alt="">
+                            <section class="text-overlay">
+                                <button onclick="hello()">
+                                    <h2>The Alliance</h2> 
+                                </button>
+                            </section>
+                        </section>
+
                         
                     </section>
 
                 </section>
+
+                <!--Pop up-->
+                <!-- <section class="popup" id="popup">
+                    <h2>Thank you</h2>
+                    <p>Your details has been successfully submitted. Thanks!</p>
+                    <button type="button" onclick="closePopup()">Ok</button>
+                </section> -->
+
+                <!-- <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p>This is a pop-up message and you cannot interact with the main page while this message is displayed.</p>
+                    </div>
+                </div> -->
+
 
             </article>
 
@@ -217,22 +285,32 @@
                 </section>
             </section> -->
             
+            
+
         </article>
 
     </main>
 
     <footer></footer>
 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>This is a pop-up message and you cannot interact with the main page while this message is displayed.</p>
+        </div>
+    </div>
+
+
     <div class="cursor"></div>
     <div class="cursor2"></div>
     <script>
 
-        function hello() {
+        /* function hello() {
             console.log("CHECKED!");
-        }
+        } */
 
         /* Pop Up Effect */
-        /* let popup = document.getElementById("popup");
+        let popup = document.getElementById("popup");
 
         function openPopup() {
             popup.classList.add("open-popup");
@@ -240,13 +318,42 @@
 
         function closePopup() {
             popup.classList.remove("open-popup");
-        } */
+        }
 
         var cursor = document.querySelector(".cursor");
         var cursor2 = document.querySelector(".cursor2");
         document.addEventListener("mousemove", function(e) {
             cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
         });
+
+        /*** Test ****/
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+
+
     </script>
 
 </body>
