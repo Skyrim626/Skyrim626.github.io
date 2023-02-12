@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hans Zin">
+    <meta name="description" content="This page is to show my works and projects">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/portfolio_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/header_style.css">
+    <link rel="stylesheet" href="styles/body_style.css">
+    <link rel="stylesheet" href="styles/style_about.css">
+    <script src="https://kit.fontawesome.com/0753959a3d.js" crossorigin="anonymous"></script>
+    <script src="scripts/controller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="scripts/navigationController.js"></script>
+    <title>Zin's Portfolio</title>
+</head>
+<body>
+    
+    <header>
+        <p>
+            <a href="#" class="logo">ZIN</a>
+        </p>
+        <nav>
+            <ul class="navigation">
+                <li class="homeList">
+                    <a href="index.html" class="homeLink" onclick="navigationLinkClicked(this)">Home</a>
+                    <!--Nested Menu Option-->
+                    <ul class="dropdownHome">
+                        <li>
+                            <a href="/#aboutMe" class="dropDownLink" onclick="navigationLinkClicked(this)">About Me</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=a3Z7zEc7AXQ" target="_blank" class="dropDownLink">Skills</a>
+                        </li>
+                        <li>
+                            <a href="/#projects" class="dropDownLink" onclick="navigationLinkClicked(this)">Relevant Projects</a>
+                        </li>
+                        <li>
+                            <a href="/#education" class="dropDownLink" onclick="navigationLinkClicked(this)">Education</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="slash">/</li>
+                <li>
+                    <a href="work.html" onclick="navigationLinkClicked(this)">Work</a>
+                </li>
+                <li class="slash">/</li>
+                <li class="galleryList">
+                    <a href="https://www.youtube.com/watch?v=a3Z7zEc7AXQ" target="_blank">Gallery</a>
+                    <!--Nested Menu Option-->
+                    <ul class="dropdownGallery">
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=a3Z7zEc7AXQ" target="_blank" class="dropDownLink">My Shots</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=a3Z7zEc7AXQ" target="_blank" class="dropDownLink">Random Shots</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="slash">/</li>
+                <li>
+                    <a href="/#contact" onclick="navigationLinkClicked(this)">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <ul>
+            <li class="menubar">
+                <i class="fa-solid fa-ellipsis"></i>
+                <ul class="sideBarMenu">
+                    <li>
+                        <a href="" class="sideBarIcon" id="hoverFacebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="sideBarIcon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="sideBarIcon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+            </li>
+            <!-- <ul class="sideBarMenu">
+                <li>
+                    <a href="" class="sideBarIcon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sideBarIcon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sideBarIcon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </ul> -->
+        <!-- <a href="" class="menubar"></a> -->
+    </header>
 
+    <main>
+
+        <article class="container">
+            <section class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+            
+            </section>
+
+            <article>
+
+                <section class="rowContainer">
+                    
+                    <section class="row row1">
+
+                        <section class="box box1">
+                            
+                            <img src="img/orionProject/orionLogo.jpg" alt="ATM SYSTEM">
+
+                            <section class="text-overlay">
+                                <button onclick="hello()">
+                                    <h2>ORION Bank System</h2> 
+                                </button>
+                            </section>
+
+                        </section>
+
+                    </section>
+
+                    <section class="row row2">
+                        <section class="box box1">
+                            <img src="img/stellarWeb/stellarLogo.png" alt="STELLAR WEBSITE">
+                            <section class="text-overlay">
+                                <button onclick="hello()">
+                                    <h2>STELLAR WEBSITE</h2> 
+                                </button>
+                            </section>
+                        </section>
+
+
+                       
+                    </section>
+
+                    <section class="row row3">
+                        <section class="box box1">
+                            <img src="img/tictactoeProjectImage.png" alt="">
+                            <section class="text-overlay">
+                                <button onclick="hello()">
+                                    <h2>TIC TAC TOE</h2> 
+                                </button>
+                            </section>
+                        </section>
+                        
+                    </section>
+
+                </section>
+
+            </article>
+
+            <!--Pop Up Style-->
+            <!-- <section class="box">
+                <button type="submit" class="btn" onclick="openPopup()">Click Me</button>
+                <section class="popup" id="popup">
+                    <img src="img/school/school_Logo3.jpg" alt="Sample Photo">
+                    <h2>Thank you</h2>
+                    <p>Your details has been successfully submitted. Thanks!</p>
+                    <button type="button" onclick="closePopup()">Ok</button>
+                </section>
+            </section> -->
+            
+        </article>
+
+    </main>
+
+    <footer></footer>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+
+        function hello() {
+            console.log("CHECKED!");
+        }
+
+        /* Pop Up Effect */
+        /* let popup = document.getElementById("popup");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        } */
+
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove", function(e) {
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+    </script>
+
+</body>
+</html>

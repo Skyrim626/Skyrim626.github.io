@@ -1,0 +1,301 @@
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("../fonts/Orbitron/Orbitron-VariableFont_wght.ttf") format("opentype");
+  }
+ @font-face {
+    font-family: "Anurati";
+    src: url("../fonts/Anurati-Regular.otf") format("opentype");
+  }
+
+
+main {
+    /* min-height: 100vh; */
+    background: black;
+}
+
+main .container {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+
+}
+
+main .container .bubbles {
+    position: relative;
+    display: flex;
+}
+
+/* main .container .bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+                0 0 50px #4fc3dc,
+                0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(250s / var(--i));
+} */
+main .container .bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #1F51FF;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #2600fd44,
+                0 0 50px #1F51FF,
+                0 0 100px #1F51FF;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(250s / var(--i));
+}
+
+/* main .container .bubbles span:nth-child(even) {
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+                0 0 50px #ff2d75,
+                0 0 100px #ff2d75;
+} */
+main .container .bubbles span:nth-child(even) {
+    background: whitesmoke;
+    box-shadow: 0 0 0 10px #00000000,
+                0 0 50px whitesmoke,
+                0 0 100px whitesmoke;
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+
+
+
+main .container article .rowContainer {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  height: 100%;
+}
+
+main .container article .rowContainer .row {
+  /* background-color: blue; */
+  width: 30%;
+  height: 100vh;
+  
+  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main .container article .rowContainer .row .box {
+    width: 90%;
+    height: 200px;
+    /* background-color: green; */
+    margin-bottom: 20px;
+
+    border: 2px solid gray;
+
+    transition: 0.25s ease-in-out;
+
+     /* Glassmorphism */
+     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+     backdrop-filter: blur( 5px );
+     -webkit-backdrop-filter: blur( 5px );
+     border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+}
+
+main .container article .rowContainer .row .box img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    border: 2px solid rgba(8, 8, 8, 0.5);
+
+    transition: 0.50s ease-in-out;
+
+    
+}
+
+main .container article .rowContainer .row .box .text-overlay button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+main .container article .rowContainer .row .box:hover {
+    /* border: 2px solid black; */
+    transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+
+/** Add text Overlay **/
+main .container article .rowContainer .row .box .text-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.50s;
+    display: flex;
+    
+    /* padding: 30px; */
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+
+main .container article .rowContainer .row .box .text-overlay h2 {
+    color: white;
+    font-family: "Orbitron";
+    font-size: 20px;
+    letter-spacing: 5px;
+
+    position: absolute;
+    top: 10%;
+    right: 30%;
+}
+
+main .container article .rowContainer .row .box .text-overlay:hover {
+    opacity: 1;
+}
+
+
+/** Row 1 **/
+
+main .container article .rowContainer .row.row1 {
+    display: block;
+}
+
+main .container article .rowContainer .row.row1 .box.box1 {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    height: 380px;
+    /* background: url("../img/atmProjectImage/atmProjectImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+
+}
+
+
+
+
+
+/** Row 2 **/
+main .container article .rowContainer .row.row2 {
+    display: block;
+}
+
+main .container article .rowContainer .row.row2 .box.box1 {
+    margin-top: 300px;
+    
+}
+
+
+/** Row 3 **/
+main .container article .rowContainer .row.row3 {
+    display: block;
+}
+
+main .container article .rowContainer .row.row3 .box.box1 {
+    margin-top: 5px;
+    height: 280px;
+}
+
+
+/** Button Testing **/
+
+/* main .container .box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .box .btn {
+    padding: 10px 60px;
+    background-color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+main .container .box .popup {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    height: 100%;
+    
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+main .container .box .open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+main .container .box .popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main .container .box .popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+main .container .box .popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px; 
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+ */

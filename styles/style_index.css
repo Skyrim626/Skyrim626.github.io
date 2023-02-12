@@ -702,6 +702,7 @@ main .contactMe .contactForm {
     /* width: 80%; */
 
     transition: .50s ease-in-out;
+    /* position: relative; */
 
 }
 
@@ -716,6 +717,7 @@ main .contactMe .contactForm {
 
 main .contactMe .contactForm .section {
     margin: 10px;
+    position: relative;
 }
 
 /** Left Section **/
