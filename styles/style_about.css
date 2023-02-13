@@ -283,7 +283,7 @@ main .container .bubbles span {
                 0 0 50px #1F51FF,
                 0 0 100px #1F51FF;
     animation: animate 15s linear infinite;
-    animation-duration: calc(80s / var(--i));
+    animation-duration: calc(500s / var(--i));
 }
 
 /* main .container .bubbles span:nth-child(even) {
@@ -297,6 +297,7 @@ main .container .bubbles span:nth-child(even) {
     box-shadow: 0 0 0 10px #00000000,
                 0 0 50px whitesmoke,
                 0 0 100px whitesmoke;
+
 }
 
 
