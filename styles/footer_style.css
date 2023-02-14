@@ -1,0 +1,21 @@
+footer {
+    background-color: black;
+    
+}
+
+a {
+    font-family: "Orbitron";
+    text-decoration: none;
+    color:white;
+}
+
+footer p {
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("../fonts/Orbitron/Orbitron-VariableFont_wght.ttf") format("opentype");
+  }
